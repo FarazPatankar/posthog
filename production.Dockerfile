@@ -38,5 +38,6 @@ WORKDIR /home/posthog/code
 
 USER posthog
 
-EXPOSE 8000
+ARG PORT
+EXPOSE ${PORT}
 CMD ["./bin/docker"]
